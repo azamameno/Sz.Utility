@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>Sz.Utility</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>Sz.Utility</PackageId>
+        <Version>0.0.1</Version>
+        <Authors>Thuan Huynh</Authors>
+        <Company>Sz</Company>
+        <Description>A small utility library for personal project</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/azamameno/Sz.Utility</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/azamameno/Sz.Utility</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
+    </ItemGroup>
+
+</Project>
