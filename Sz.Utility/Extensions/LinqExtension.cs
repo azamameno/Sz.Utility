@@ -1,5 +1,4 @@
 using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
 
 namespace System.Linq;
 
@@ -26,19 +25,6 @@ public static class LinqExtension {
         }
 
         return funcFalse != null ? funcFalse.Invoke(source) : source;
-    }
-
-    public static async Task<int> CountIf<TSource, TResult>(this IQueryable<TSource> source, bool when, CancellationToken cancellationToken = default) {
-        return await source.CountIf<TSource, TResult>(when, null, cancellationToken);
-    }
-
-    public static async Task<int> CountIf<TSource, TResult>(this IQueryable<TSource> source, bool when,
-        Expression<Func<TSource, TResult>>? selector = null,
-        CancellationToken cancellationToken = default) {
-        if (!when) return 0;
-        if (selector != null)
-            return await source.Select(selector).CountAsync(cancellationToken);
-        return await source.CountAsync(cancellationToken);
     }
 
     public static IQueryable<TSource> Paging<TSource>(this IQueryable<TSource> source, int skip, int take) {

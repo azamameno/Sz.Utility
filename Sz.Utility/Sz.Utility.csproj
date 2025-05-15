@@ -6,7 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>Sz.Utility</PackageId>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <Authors>Thuan Huynh</Authors>
         <Company>Sz</Company>
         <Description>A small utility library for personal project</Description>
@@ -15,9 +15,5 @@
         <RepositoryUrl>https://github.com/azamameno/Sz.Utility</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.15" />
-    </ItemGroup>
 
 </Project>
